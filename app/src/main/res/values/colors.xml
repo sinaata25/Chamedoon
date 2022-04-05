@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F39C12</color>
+    <color name="colorPrimaryDark">#FF5722</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="green">#10C518</color>
+    <color name="blue">#03A9F4</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="MPD_primaryColor">#FF5722</color>
+    <color name="MPD_pickerItemColorSelected">@color/MPD_primaryColor</color>
+
+
+</resources>

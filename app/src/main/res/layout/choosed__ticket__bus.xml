@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="show_activitys.Choosed_Ticket_Train">
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/bus_textView_picked_mabda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_weight=".33"
+                    android:text="@string/shiraz" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    app:srcCompat="@drawable/arrow_right"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/bus_textView_picked_maghsad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_weight=".33"
+                    android:text="@string/bushehr" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/bus_textView_piked_tarikh"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="۲۲ مهر ۱۳۷۹" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_list_information"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="اطلاعات اتوبوس" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="409dp"
+                android:layout_height="153dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/distance" />
+
+
+            <TextView
+                android:id="@+id/bus_textView_picked_origin"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:background="@drawable/textview_style_origin"
+                android:gravity="center"
+                android:text="مشهد"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.104"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.777" />
+
+            <TextView
+                android:id="@+id/bus_textView_picked_time_start"
+                android:layout_width="34dp"
+                android:layout_height="35dp"
+                android:layout_weight=".6"
+                android:background="@drawable/textview_style_time"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.439"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/bus_textView_picked_dist"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:background="@drawable/textview_style_dist"
+                android:gravity="center"
+                android:text="شیراز"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <TextView
+                android:id="@+id/bus_textView_picked_time_end"
+                android:layout_width="38dp"
+                android:layout_height="31dp"
+                android:layout_weight=".6"
+                android:background="@drawable/textview_style_time"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.761"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.503" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/bus_textView_company_pick"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:layout_gravity="center"
+                android:text="بن ریل"
+                android:textSize="30dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:id="@+id/bus_time_go"
+                    android:layout_weight=".9"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:text="12"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_weight=".1"
+                    android:text="ساعت حرکت:"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:id="@+id/bus_type_go"
+                    android:layout_weight=".9"
+                    android:paddingRight="10dp"
+                    android:text="ساده"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_weight=".1"
+                    android:text="نوع اتوبوس:"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:id="@+id/bus_distance"
+                    android:layout_weight=".9"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:text="۴"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_weight=".1"
+                    android:text="مسافت:"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:id="@+id/bus_price_go"
+                    android:layout_weight=".9"
+                    android:paddingRight="10dp"
+                    android:text="1,900,000 ریال"
+                    android:textColor="@color/green"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_weight=".1"
+                    android:text="قیمت هر بلیط:"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_style_3"
+                android:fontFamily="@font/font1"
+                android:text="انتخاب صندلی"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:id="@+id/bus_btn_choose_chair"
+                android:layout_height="wrap_content"/>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

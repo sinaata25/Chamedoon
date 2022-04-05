@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="show_activitys.Edit_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="6dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:text="ویرایش پروفایل"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="30dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="نام"
+                    android:id="@+id/editactivity_name"
+                    android:gravity="center"
+                    android:fontFamily="@font/font1"
+                    android:textSize="25dp"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="نام خانوادگی"
+                android:id="@+id/editactivity_family"
+                android:gravity="center"
+                android:fontFamily="@font/font1"
+                android:textSize="25dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="30dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="شماره"
+                android:gravity="center"
+                android:fontFamily="@font/font1"
+                android:id="@+id/editactivity_number"
+                android:textSize="25dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="رمز عبور"
+                android:gravity="center"
+                android:id="@+id/editactivity_email"
+                android:fontFamily="@font/font1"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="جنسیت"
+                android:textSize="25dp"
+                android:fontFamily="@font/font1"
+                android:id="@+id/editactivity_sex"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:fontFamily="@font/font1"
+        android:textSize="25dp"
+        android:text="تایید"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="4dp"
+        android:id="@+id/editactivity_button_ok"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/btn_style_6"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

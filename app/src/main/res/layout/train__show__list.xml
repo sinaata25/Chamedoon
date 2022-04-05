@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_list_mabda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_weight=".33"
+                    android:text="@string/shiraz" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    app:srcCompat="@drawable/arrow_right"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/textView_list_maghsad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_weight=".33"
+                    android:text="@string/bushehr" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/textView_train_farda"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/textview_style4"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="@string/farda" />
+                <TextView
+                    android:id="@+id/textView_list_tarikh"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="۲۲ مهر ۱۳۷۹" />
+                <TextView
+                    android:id="@+id/textView_train_dirooz"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/textview_style4"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight=".2"
+                    android:text="@string/dirooz" />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/noexist_layout"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView_noexist_train"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/not_exist_train"
+            android:textColor="#E30E0E"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.382" />
+
+
+        <ImageView
+            android:layout_width="392dp"
+            android:layout_height="110dp"
+            android:src="@drawable/cansle"
+            app:layout_constraintBottom_toTopOf="@+id/textView_noexist_train"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.548" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycler_train_list"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+
+    <TextView
+        android:id="@+id/textView_dashbord"
+        android:layout_width="293dp"
+        android:layout_height="33dp"
+        android:gravity="start|center"
+        android:padding="4dp"
+        android:layout_marginRight="6dp"
+        android:textSize="20dp"
+        android:text="@string/app_name_persian"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_dashbord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_dashbord"
+        android:layout_width="54dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_height="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/distance" />
+</androidx.constraintlayout.widget.ConstraintLayout>

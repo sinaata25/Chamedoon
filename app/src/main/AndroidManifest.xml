@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ataie.sina.chamedoon">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="show_activitys.Chair_Bus"></activity>
+        <activity android:name="show_activitys.Choosed_Ticket_Bus" />
+        <activity android:name="show_activitys.Edit_Activity" />
+        <activity android:name="show_activitys.Choosed_Ticket_Train" />
+        <activity android:name="show_activitys.Bus_Show_List" />
+        <activity android:name="show_activitys.Train_Show_List" />
+        <activity android:name="pick_activitys.DATE_Picker" />
+        <activity android:name="pick_activitys.Train_Pick_city" />
+        <activity android:name=".Splash_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

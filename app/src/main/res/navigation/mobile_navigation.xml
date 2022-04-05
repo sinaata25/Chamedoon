@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="ataie.sina.chamedoon.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/home_to_airplane"
+            app:destination="@id/fragment_Airplane" />
+        <action
+            android:id="@+id/home_to_train"
+            app:destination="@id/fragment_Train" />
+        <action
+            android:id="@+id/home_to_bus"
+            app:destination="@id/fragment_Bus" />
+        <action
+            android:id="@+id/home_to_tour"
+            app:destination="@id/fragment_Tour" />
+        <action
+            android:id="@+id/home_to_hotel"
+            app:destination="@id/fragment_Hotel" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="ataie.sina.chamedoon.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="ataie.sina.chamedoon.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/fragment_Airplane"
+        android:name="fragments.Fragment_Airplane"
+        android:label="Fragment_Airplane" />
+    <fragment
+        android:id="@+id/fragment_Train"
+        android:name="fragments.Fragment_Train"
+        android:label="Fragment_Train" />
+    <fragment
+        android:id="@+id/fragment_Bus"
+        android:name="fragments.Fragment_Bus"
+        android:label="Fragment_Bus" />
+    <fragment
+        android:id="@+id/fragment_Hotel"
+        android:name="fragments.Fragment_Hotel"
+        android:label="Fragment_Hotel" />
+    <fragment
+        android:id="@+id/fragment_Tour"
+        android:name="fragments.Fragment_Tour"
+        android:label="Fragment_Tour" />
+    <dialog
+        android:id="@+id/vorood_Fragment_Dialog"
+        android:name="fragments.Vorood_Fragment_Dialog"
+        android:label="Vorood_Fragment_Dialog" />
+</navigation>

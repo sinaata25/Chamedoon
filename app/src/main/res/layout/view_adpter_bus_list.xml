@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginRight="4dp"
+    android:id="@+id/card_show_bus"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="6dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView_type_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:text="VIP" />
+
+
+            <TextView
+                android:id="@+id/textView_date_bus_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="1399/7/26" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView_price_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="2,300,000" />
+
+
+
+            <TextView
+                android:id="@+id/textView_company_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:background="@drawable/style_textview_3"
+                android:textSize="40dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/font1"
+                android:textColor="@color/blue"
+                android:text="رجا" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/textView_start_time_train"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".15"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="ساعت حرکت" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/arrow_right"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/textView_time_train_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="۷" />
+
+
+
+
+            <TextView
+                android:id="@+id/textView_capacity_train_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="12" />
+
+
+
+
+            <TextView
+                android:id="@+id/textVis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="left"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                android:text="ظرفیت باقیمانده:" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
